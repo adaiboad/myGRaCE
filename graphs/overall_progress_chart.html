@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Progress tracker | amCharts</title>
+		<meta name="description" content="chart created using amCharts live editor" />
+		
+		<!-- amCharts javascript sources -->
+		<script type="text/javascript" src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+		<script type="text/javascript" src="https://www.amcharts.com/lib/3/serial.js"></script>
+		
+		<!-- amCharts plugins -->
+		<script type="text/javascript" src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
+		<link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css">
+
+		<!-- amCharts javascript code -->
+		<script type="text/javascript">
+			AmCharts.makeChart("chartdiv",
+				{
+					"type": "serial",
+					"categoryField": "date",
+					"dataDateFormat": "YYYY-MM-DD",
+					"backgroundAlpha": 0.8,
+					"color": "#235E23",
+					"theme": "default",
+					"export": {
+						"enabled": true
+					},
+					"categoryAxis": {
+						"parseDates": true,
+						"title": "Time"
+					},
+					"chartCursor": {
+						"enabled": true
+					},
+					"trendLines": [],
+					"graphs": [
+						{
+							"bullet": "round",
+							"id": "AMGraph-1",
+							"title": "Ending your own life",
+							"valueField": "Ending your own life"
+						},
+						{
+							"bullet": "round",
+							"id": "AmGraph-2",
+							"title": "Harming yourself",
+							"valueField": "Harming yourself"
+						},
+						{
+							"bullet": "round",
+							"id": "AmGraph-3",
+							"title": "Harming others/Damaging property",
+							"valueField": "Harming others/Damaging property"
+						},
+						{
+							"bullet": "round",
+							"id": "AmGraph-4",
+							"title": "Not looking after yourself",
+							"valueField": "Not looking after yourself"
+						},
+						{
+							"accessibleLabel": "[[Title]] [[category]] [[value]]",
+							"bullet": "round",
+							"id": "AmGraph-5",
+							"title": "Feeling vulnerable",
+							"valueField": "Feeling vulnerable"
+						}
+					],
+					"guides": [],
+					"valueAxes": [
+						{
+							"id": "ValueAxis-1",
+							"title": "Level of concern"
+						},
+						{
+							"id": "ValueAxis-2",
+							"position": "bottom",
+							"type": "date",
+							"title": "Time"
+						}
+					],
+					"allLabels": [
+						{
+							"bold": true,
+							"color": "#9400D3",
+							"id": "Label-1",
+							"text": "(High concern)",
+							"x": 1,
+							"y": 35
+						},
+						{
+							"bold": true,
+							"color": "#64D664",
+							"id": "Label-2",
+							"text": "(No concern)",
+							"x": 1,
+							"y": 280
+						}
+					],
+					"balloon": {},
+					"legend": {
+						"enabled": true,
+						"useGraphSettings": true
+					},
+					"titles": [
+						{
+							"id": "Title-1",
+							"size": 15,
+							"text": "Progress Tracker"
+						}
+					],
+					"dataProvider": [
+						{
+							"date": "2018-01-05",
+							"Ending your own life": "2",
+							"Harming yourself": "7",
+							"Harming others/Damaging property": "4",
+							"Not looking after yourself": "8",
+							"Feeling vulnerable": "4"
+						},
+						{
+							"date": "2018-01-09",
+							"Ending your own life": "1",
+							"Harming yourself": "4",
+							"Harming others/Damaging property": "5",
+							"Not looking after yourself": "6",
+							"Feeling vulnerable": "7"
+						},
+						{
+							"date": "2018-01-10",
+							"Ending your own life": "8",
+							"Harming yourself": "8",
+							"Harming others/Damaging property": "3",
+							"Not looking after yourself": "8",
+							"Feeling vulnerable": "8"
+						},
+						{
+							"date": "2018-01-18",
+							"Ending your own life": "8",
+							"Harming yourself": "8",
+							"Harming others/Damaging property": "4",
+							"Not looking after yourself": "6",
+							"Feeling vulnerable": "2"
+						},
+						{
+							"date": "2018-01-21",
+							"Ending your own life": "2",
+							"Harming yourself": "2",
+							"Harming others/Damaging property": "3",
+							"Not looking after yourself": "3",
+							"Feeling vulnerable": "6"
+						},
+						{
+							"date": "2018-01-26",
+							"Ending your own life": "2",
+							"Harming yourself": "2",
+							"Harming others/Damaging property": "4",
+							"Not looking after yourself": "2",
+							"Feeling vulnerable": "2"
+						},
+						{
+							"date": "2018-02-07",
+							"Ending your own life": "2",
+							"Harming yourself": "2",
+							"Harming others/Damaging property": "1",
+							"Not looking after yourself": "6",
+							"Feeling vulnerable": "2"
+						},
+						{
+							"date": "2018-02-11",
+							"Ending your own life": "0",
+							"Harming yourself": "2",
+							"Harming others/Damaging property": "1",
+							"Not looking after yourself": "7",
+							"Feeling vulnerable": "2"
+						},
+						{
+							"date": "2018-02-17",
+							"Ending your own life": "7",
+							"Harming yourself": "7",
+							"Harming others/Damaging property": "3",
+							"Not looking after yourself": "5",
+							"Feeling vulnerable": "3"
+						},
+						{
+							"date": "2018-02-19",
+							"Ending your own life": "2",
+							"Harming yourself": "8",
+							"Harming others/Damaging property": "8",
+							"Not looking after yourself": "2",
+							"Feeling vulnerable": "0"
+						},
+						{
+							"date": "2018-02-27",
+							"Ending your own life": "2",
+							"Harming yourself": "6",
+							"Harming others/Damaging property": "0",
+							"Not looking after yourself": "4",
+							"Feeling vulnerable": "8"
+						}
+					]
+				}
+			);
+		</script>
+	</head>
+	<body>
+		<div id="chartdiv" style="width: 60%; height: 400px; background-color: #FFFFFF; box-shadow: 0 5px 15px rgba(0,0,0,.5);border-radius: 6px;" ></div>
+	</body>
+</html>

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>myGRaCE</title>
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- JQuery for amcharts -->
+    <script type="text/javascript" src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+    <script type="text/javascript" src="https://www.amcharts.com/lib/3/serial.js"></script>
+    <script src="graphs/highlighted-issues/key_issues.js"></script>
+
+
+    <!-- Custom styles for this template -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <div id="wrapper">
+      <div class="navoverlay"></div>
+
+      <div class="banner"></div>
+      <!-- Top tool bar -->
+      <div class="toolbar">
+        <i><a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle"><img class="logo" src="image/icon_hover/3_lines_white.png"></a></i>
+
+        <!-- Webpage information icon -->
+        <div class="popup information-btn" onclick="infoPopup()"><img src="image/info.png">
+          <span class="popuptext " id="infoPopup">On this page you can review a list of "apects of your life" that need to address. Consult the 'GRaCE Advice' or
+	select 'Previous action plans' for advice and suggestions.</span>
+        </div>
+        <h1 class="myGRaCE_title">myGRaCE Reports</h1>
+
+
+        <a href="progress_tracker.html"><img class="tracker_button" src="image/tracker_button.png" ></a>
+
+      </div>
+
+
+      <!-- Sidebar -->
+      <nav>
+        <ul class="sidebar-nav ">
+          <li class="sidebar-brand">
+            <img class="grace_logo" src="image/mygracelogo.png" align="middle">
+          </li>
+          <li class="sidebar-list">
+            <a href="index.html">
+					<img src="image/icon_hover/graph_small@2x.png"align="left">
+					Progress
+					</a>
+          </li>
+          <li class="sidebar-list">
+            <li class="sidebar-list">
+              <a class="active" href="focus.html#falls-accidents">
+					<img src="image/icon_hover/focus2_small@2x.png"align="left" style="left: 13px;">
+					Focus for today
+					</a>
+            </li>
+            <li class="sidebar-list">
+              <a href="action_plan.html">
+					<img src="image/icon_hover/diary_small@2x.png"align="left">
+					My Action Plans
+					</a>
+            </li>
+            <li class="sidebar-list">
+              <a href="feb_reports.html">
+					<img src="image/icon_hover/document_small@2x.png"align="left">
+					Report History
+					</a>
+            </li>
+        </ul>
+        <footer class="popuphelp help_icon" onclick="helpPopup()"><img src="image/help1.0.png">
+          <span class="popuptext" id="helpPopup"><img src="image/colour_spec.png" style="
+    width: 350px;
+    border-radius: 6px;
+"> <a class="close" role="button" style="
+    position: relative;
+    top: -160px;
+    left: 10px;
+    font-size: 20px;
+	    color: #000;
+    ">X</a></span>
+        </footer>
+
+
+      </nav>
+      <!-- /#sidebar-wrapper -->
+
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+        <div class="container-fluid">
+          <h2 class="pg_title">Focus for today</h2>
+          <!-- Dropdown list -->
+          <div class="dropdown">
+            <h1><a href="#falls-accidents">Recent falls or accidents</a></h1>
+            <ul>
+              <li><a href="#falls-accidents">Recent falls or accidents</a></li>
+              <li><a href="#skin">Skin</a></li>
+              <li><a href="#personal-hygiene">Personal hygiene</a></li>
+              <li><a href="#self-neglect">Signs of self neglect</a></li>
+              <li><a href="#self-harming-injuries">Self-harming injuries</a></li>
+              <li><a href="#self-harming-method">Change in self-harming method</a></li>
+              <li><a href="#cope-difficulties">Self-harming to cope with difficulties</a></li>
+              <li><a href="#emotional-vulnerability">Emotional Vulnerability</a></li>
+              <li><a href="#financial-vulnerability">Financial Vulnerability</a></li>
+            </ul>
+          </div>
+
+          <!-- Dropdown list -->
+
+
+          <div class="issue_graphs">
+
+            <!-- recent falls or accidents -->
+            <div id="falls-accidents" class="graphs" style="width: 120%;  background-color: #FFFFFF;    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 5px;border-radius: 6px;"></div>
+
+            <!-- skin -->
+            <div id="skin" class="graphs" style="width: 120%;  background-color: #FFFFFF;    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 5px;border-radius: 6px;"></div>
+
+            <!-- personal hygiene -->
+            <div id="personal-hygiene" class="graphs" style="width: 120%;  background-color: #FFFFFF;    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 5px;border-radius: 6px;"></div>
+
+            <!-- signs of self neglect -->
+            <div id="self-neglect" class="graphs" style="width: 120%;  background-color: #FFFFFF;    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 5px;border-radius: 6px;"></div>
+
+            <!-- self harming injuries -->
+            <div id="self-harming-injuries" class="graphs" style="width: 120%;  background-color: #FFFFFF;    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 5px;border-radius: 6px;"></div>
+
+            <!-- self harming methods -->
+            <div id="self-harming-method" class="graphs" style="width: 120%;  background-color: #FFFFFF;    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 5px;border-radius: 6px;"></div>
+
+            <!-- coping with difficulties -->
+            <div id="cope-difficulties" class="graphs" style="width: 120%;  background-color: #FFFFFF;    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 5px;border-radius: 6px;"></div>
+
+            <!-- emotional vulnerability -->
+            <div id="emotional-vulnerability" class="graphs" style="width: 120%;  background-color: #FFFFFF;    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 5px;border-radius: 6px;"></div>
+
+            <!-- financial vulnerability -->
+            <div id="financial-vulnerability" class="graphs" style="width: 120%;  background-color: #FFFFFF;    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 5px;border-radius: 6px;"></div>
+
+
+          </div>
+
+
+          <!-- Main -->
+          <div class="button-group">
+
+            <!-- Modal #1 -->
+            <div class="modal_boxes">
+              <ul>
+                <!-- Modal #3 -->
+                <li><a class="show" aria-haspopup="true"><button class="button graph_btn center under_768_button">GRaCE Advice</button></a>
+
+                  <section class="mask" role="dialog"></section>
+                  <section class="modal" style="max-width: 90vw;" role="alert">
+
+                    <section class="modal__content" style="width: 45vw;background-color: white;box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);border-radius: 5px;">
+                      <a class="close" role="button" style="
+    position: relative;
+    top: -10px;">X</a>
+                      <hr style="top: 50px; width: 100%;" class="style1">
+                      <h4 style="    position: relative;
+    top: -20px;
+	    left: 5%;
+    text-align: center; font-size: 26px;
+">GRaCE advice on: Falls and accidents</h4>
+
+
+                      <div class="advice">
+                        <ul>
+                          <li><b>Preventing falls.</b><br>
+                            <a href="http://www.diabetesselfmanagement.com/managing-diabetes/general-health-issues/preventing-falls/">
+http://www.diabetesselfmanagement.com/managing-diabetes/general-health-issues/preventing-falls/
+</a>
+                          </li>
+                          <li><b>Age UK advice on falls.</b><br>
+                            <a href="http://www.ageuk.org.uk/walthamforest/information--advice/falls-prevention-advice/">
+http://www.ageuk.org.uk/walthamforest/information--advice/falls-prevention-advice/
+</a>
+                          </li>
+                          <li><b>NHS advice on falls.</b><br>
+                            <a href="http://www.nhs.uk/conditions/Falls/Pages/Introduction.aspx">
+http://www.nhs.uk/conditions/Falls/Pages/Introduction.aspx
+</a>
+                          </li>
+
+                        </ul>
+                      </div>
+                    </section>
+                  </section>
+                </li>
+                <!-- Modal #2 -->
+                <li><a class="show" href="action_plan.html"><button class="button graph_btn center under_768_button">Previous action plans</button>
+</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="return">
+      <a href="https://www.egrist.org/content/demo-mygrace">
+                        <img class="logo" src="image/grace-tree-small_s.png" align="middle" style="    width: 50%;">                   
+			 <p class = "myGrace_return"><b>return to<br>myGRaCE</b></p>
+			 </a>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+
+
+
+    <!-- /#wrapper -->
+
+
+
+
+    <!-- Menu Toggle Script -->
+    <script>
+      $("#menu-toggle").click(function(e) {
+        $('.navoverlay').css('opacity', '1');
+        $('.navoverlay').css('z-index', '200');
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+        $('.navoverlay').click(function() {
+          $('.navoverlay').css('opacity', '0');
+          $('.navoverlay').css('z-index', '-1');
+          e.preventDefault();
+          $("#wrapper").toggleClass("toggled");
+        });
+      });
+
+    </script>
+
+    <script>
+      //Modal function script
+
+      // Click function for show the Modal
+      $(".show").on("click", function() {
+        $(this).next(".mask").addClass("active");
+      });
+
+      // Function for close the Modal
+      function closeModal() {
+        $(".mask").removeClass("active");
+      }
+
+      // Call the closeModal function on click
+      $(".close, .mask").on("click", function() {
+        closeModal();
+      });
+
+    </script>
+
+    <script>
+      // When the user clicks on div, open the popup
+      function infoPopup() {
+        var popup = document.getElementById("infoPopup");
+        popup.classList.toggle("show");
+      }
+
+      function helpPopup() {
+        var popup = document.getElementById("helpPopup");
+        popup.classList.toggle("show");
+      }
+
+    </script>
+
+
+
+
+
+
+  </body>
+
+</html>

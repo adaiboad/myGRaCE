@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Not looking after yourself 26/02/18 | amCharts</title>
+		<meta name="description" content="chart created using amCharts live editor" />
+		
+		<!-- amCharts javascript sources -->
+		<script type="text/javascript" src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+		<script type="text/javascript" src="https://www.amcharts.com/lib/3/serial.js"></script>
+		
+
+		<!-- amCharts javascript code -->
+		<script type="text/javascript">
+			AmCharts.makeChart("chartdiv",
+				{
+					"type": "serial",
+					"categoryField": "category",
+					"columnWidth": 0.04,
+					"startDuration": 1,
+					"percentPrecision": 1,
+					"precision": 0,
+					"categoryAxis": {
+						"gridPosition": "start",
+						"title": "Aspects of your life"
+					},
+					"chartCursor": {
+						"enabled": true,
+						"animationDuration": 0,
+						"categoryBalloonColor": "#CC0000"
+					},
+					"trendLines": [],
+					"graphs": [
+						{
+							"animationPlayed": true,
+							"balloonColor": "#FF0000",
+							"balloonText": "[[category]]:[[value]]",
+							"columnWidth": 0.06,
+							"cornerRadiusTop": 5,
+							"dashLength": 4,
+							"fillAlphas": 1,
+							"fillColors": "#FF8000",
+							"gapPeriod": 0,
+							"id": "AmGraph-1",
+							"lineAlpha": 0,
+							"lineThickness": 3,
+							"negativeFillAlphas": 0,
+							"negativeFillColors": "undefined",
+							"title": "",
+							"topRadius": 0,
+							"type": "column",
+							"valueField": "column-1",
+							"visibleInLegend": false,
+							"xField": "column-1",
+							"yField": "category"
+						}
+					],
+					"guides": [],
+					"valueAxes": [
+						{
+							"axisFrequency": 0,
+							"id": "ValueAxis-1",
+							"maximum": 10,
+							"minimum": 1,
+							"minMaxMultiplier": 0,
+							"title": "Level of concern"
+						}
+					],
+					"allLabels": [
+						{
+							"bold": true,
+							"color": "#9400D3",
+							"id": "Label-1",
+							"text": "(High concern)",
+							"x": 1,
+							"y": 30
+						},
+						{
+							"bold": true,
+							"color": "#64D664",
+							"id": "Label-2",
+							"text": "(No concern)",
+							"x": 1,
+							"y": 320
+						}
+					],
+					"balloon": {
+						"animationDuration": 0,
+						"fadeOutDuration": 0
+					},
+					"legend": {
+						"enabled": true,
+						"useGraphSettings": true
+					},
+					"titles": [
+						{
+							"id": "Title-1",
+							"size": 15,
+							"text": "Not looking after yourself"
+						}
+					],
+					"dataProvider": [
+						{
+							"category": "Hair and clothes",
+							"column-1": "2"
+						},
+						{
+							"category": "Personal hygiene",
+							"column-1": 6
+						},
+						{
+							"category": "Recent changes<br> in your appearance",
+							"column-1": "4"
+						},
+						{
+							"category": "Skin",
+							"column-1": "6"
+						}
+					]
+				}
+			);
+		</script>
+	</head>
+	<body>
+		<div id="chartdiv" style="width: 50%; height: 400px; background-color: #FFFFFF; box-shadow: 0 5px 15px rgba(0,0,0,.5);border-radius: 6px;" ></div>
+	</body>
+</html>

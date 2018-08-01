@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet type="text/css" href="css/action_plan_entries.css" ?>
+<rss version="2.0">
+<Management>
+    <Comment>
+		<CommentDate>2018-04-05</CommentDate>
+        <FirstTitle>Things I need to do immediately to stay safe</FirstTitle>
+            <FirstNote>Keep personal hygiene clean, take care of yourself. This can be therapeutic and keep your mind focused.</FirstNote>
+        <SecondTitle>On-going issues I need to deal with (e.g. where I live, who I live with, long-term physical conditions)</SecondTitle>
+            <SecondNote>Make sure doors are locked at night, and don't go out too late so you do not wander.</SecondNote>
+        <ThirdTitle>Long-standing issues I need to deal with (e.g. effects of past trauma or abuse, low self-esteem, anxiety)</ThirdTitle>
+            <ThirdNote>Replace negative thoughts with positive memories.</ThirdNote>
+    </Comment>
+    <Comment>
+		<CommentDate>2018-04-01</CommentDate>
+        <FirstTitle>Things I need to do immediately to stay safe</FirstTitle>
+            <FirstNote></FirstNote>
+        <SecondTitle>On-going issues I need to deal with (e.g. where I live, who I live with, long-term physical conditions)</SecondTitle>
+            <SecondNote>Keep lights on, so it doesn't look like your living alone or it doesn't seem like there is no one at home.</SecondNote>
+        <ThirdTitle>Long-standing issues I need to deal with (e.g. effects of past trauma or abuse, low self-esteem, anxiety)</ThirdTitle>
+            <ThirdNote>Whenever a negative thought/memory appears, look at your diary for positive ones to redirect those memories.Do not sit there a let those memories dwell. Do not go to sleep at night with those bad thought, fill them with positive ones
+    before you sleep at night.</ThirdNote>
+    </Comment>
+	<Comment>
+		<CommentDate>2018-03-31</CommentDate>
+        <FirstTitle>Things I need to do immediately to stay safe</FirstTitle>
+            <FirstNote>Stop wandering out at night</FirstNote>
+        <SecondTitle>On-going issues I need to deal with (e.g. where I live, who I live with, long-term physical conditions)</SecondTitle>
+            <SecondNote>Make a budget for your finances, so you know how much you're spending. Be friendly but cautious who you let in. If you observe certain behaviours arise in an individual, you need to separate yourself from them.</SecondNote>
+        <ThirdTitle>Long-standing issues I need to deal with (e.g. effects of past trauma or abuse, low self-esteem, anxiety)</ThirdTitle>
+            <ThirdNote>Past traumas with parents need to be slowly addressed</ThirdNote>
+    </Comment>
+    <Comment>
+		<CommentDate>2018-03-30</CommentDate>
+        <FirstTitle>Things I need to do immediately to stay safe</FirstTitle>
+            <FirstNote>Write down sad thoughts that may cause triggers. See how these thoughts link to what happened in the previous hours.</FirstNote>
+        <SecondTitle>On-going issues I need to deal with (e.g. where I live, who I live with, long-term physical conditions)</SecondTitle>
+            <SecondNote>Be more social, join a club with people that have things in common with you, so you don't feel lonely.</SecondNote>
+        <ThirdTitle>Long-standing issues I need to deal with (e.g. effects of past trauma or abuse, low self-esteem, anxiety)</ThirdTitle>
+            <ThirdNote>Past traumas with parents need to be slowly addressed</ThirdNote>
+    </Comment>
+	<Comment>
+		<CommentDate>2018-03-28</CommentDate>
+        <FirstTitle>Things I need to do immediately to stay safe</FirstTitle>
+            <FirstNote>Concentrate in public i.e. be more aware of the things around me</FirstNote>
+        <SecondTitle>On-going issues I need to deal with (e.g. where I live, who I live with, long-term physical conditions)</SecondTitle>
+            <SecondNote>Feelings and emotions - don't let your emotions control what you do day by day. If I believe it will be a trigger for me, I need to replace that trigger with something positive</SecondNote>
+        <ThirdTitle>Long-standing issues I need to deal with (e.g. effects of past trauma or abuse, low self-esteem, anxiety)</ThirdTitle>
+            <ThirdNote></ThirdNote>
+    </Comment>
+</Management>
+</rss>
